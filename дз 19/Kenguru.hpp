@@ -23,7 +23,7 @@ public:
     {
 
         weight += 10;
-        cout << "Kangaroo eats grass, weight: " << weight << endl;
+        cout << "кенгуру ест траву: " << weight << endl;
     }
 };
 

@@ -22,6 +22,6 @@ public:
     void eat_grass() override
     {
         weight += 10;
-        cout << "Wildebeest eats grass, weight: " << weight << endl;
+        cout << "гну ест траву: " << weight << endl;
     }
 };

@@ -23,12 +23,12 @@ public:
         if (travoiadnie->alive() and power > travoiadnie->get_weight())
         {
             power += 10;
-            cout << "Wolf eats herbivore, power: " << power << endl;
+            cout << "волк ест травоядных: " << power << endl;
         }
         else
         {
             power -= 10;
-            cout << "Wolf fails to eat, power: " << power << endl;
+            cout << "волк не может есть: " << power << endl;
         }
     }
 };

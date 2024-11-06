@@ -15,14 +15,14 @@ using namespace std;
 
 void print_menu()
 {
-    cout << "====== Меню для управления ======" << endl;
-    cout << "1. Добавить континент (Африка)" << endl;
-    cout << "2. Добавить континент (Северная Америка)" << endl;
-    cout << "3. Добавить континент (Австралия)" << endl;
-    cout << "4. Кормление травоядных" << endl;
-    cout << "5. Питание плотоядных" << endl;
-    cout << "6. Выход" << endl;
-    cout << "Выберите пункт: ";
+    cout << "   меню для управления   " << endl;
+    cout << "1) добавить континент (африка)" << endl;
+    cout << "2) добавить континент (северная америка)" << endl;
+    cout << "3) добавить континент (австралия)" << endl;
+    cout << "4) кормление травоядных" << endl;
+    cout << "5) питание плотоядных" << endl;
+    cout << "6) выход" << endl;
+    cout << "выберите пункт: ";
 }
 
 int main()
@@ -41,42 +41,42 @@ int main()
         {
         case 1:
             {
-            cout << "Добавление континента Африка..." << endl;
+            cout << "добавление континента африка" << endl;
             world.add_kontinent(new Afrika());
             break;
         }
         case 2:
             {
-            cout << "Добавление континента Северная Америка..." << endl;
+            cout << "добавление континента северная америка" << endl;
             world.add_kontinent(new SevernaiaAmerika());
             break;
         }
         case 3:
             {
-            cout << "Добавление континента Австралия..." << endl;
+            cout << "добавление континента австралия" << endl;
             world.add_kontinent(new Avstralia());
             break;
         }
         case 4:
             {
-            cout << "Все травоядные кормятся в мире..." << endl;
+            cout << "все травоядные кормятся в мире" << endl;
             world.meals_travoiadnie();
             break;
         }
         case 5:
             {
-            cout << "Все плотоядные получают питание..." << endl;
-            world.nutrition_plotoiadnie(); 
+            cout << "все плотоядные получают питание" << endl;
+            world.nutrition_plotoiadnie();
             break;
         }
         case 6:
             {
-            cout << "Завершение работы программы..." << endl;
+            cout << "завершение работы программы" << endl;
             is_running = false;
             break;
         }
         default:
-            cout << "Ошибка. Повторите ввод корректного номера." << endl;
+            cout << "ошибка, повторите ввод корректного номера" << endl;
             break;
         }
         cout << endl;

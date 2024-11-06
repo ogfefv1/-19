@@ -22,7 +22,7 @@ public:
     void eat_grass()
     {
         weight += 15;
-        cout << "Bison eats grass, weight: " << weight << endl;
+        cout << "бизон ест траву: " << weight << endl;
     }
 };
 
