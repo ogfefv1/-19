@@ -13,7 +13,8 @@
 
 using namespace std;
 
-void print_menu() {
+void print_menu()
+{
     cout << "====== Меню для управления ======" << endl;
     cout << "1. Добавить континент (Африка)" << endl;
     cout << "2. Добавить континент (Северная Америка)" << endl;
@@ -24,44 +25,52 @@ void print_menu() {
     cout << "Выберите пункт: ";
 }
 
-int main() {
-    setlocale(LC_ALL, "ru");
+int main()
+{
     MirGivotnih world;
     bool is_running = true;
     int option;
 
-    while (is_running) {
+    while (is_running)
+    {
         system("cls");
         print_menu();
         cin >> option;
 
-        switch (option) {
-        case 1: {
+        switch (option)
+        {
+        case 1:
+            {
             cout << "Добавление континента Африка..." << endl;
             world.add_kontinent(new Afrika());
             break;
         }
-        case 2: {
+        case 2:
+            {
             cout << "Добавление континента Северная Америка..." << endl;
             world.add_kontinent(new SevernaiaAmerika());
             break;
         }
-        case 3: {
+        case 3:
+            {
             cout << "Добавление континента Австралия..." << endl;
             world.add_kontinent(new Avstralia());
             break;
         }
-        case 4: {
+        case 4:
+            {
             cout << "Все травоядные кормятся в мире..." << endl;
             world.meals_travoiadnie();
             break;
         }
-        case 5: {
+        case 5:
+            {
             cout << "Все плотоядные получают питание..." << endl;
             world.nutrition_plotoiadnie(); 
             break;
         }
-        case 6: {
+        case 6:
+            {
             cout << "Завершение работы программы..." << endl;
             is_running = false;
             break;

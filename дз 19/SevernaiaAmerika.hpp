@@ -10,12 +10,15 @@
 #include "Volk.hpp"
 #include "Bizon.hpp"
 
-class SevernaiaAmerika : public Kontinent {
-    Travoiadnie* create_travoiadnie()  {
+class SevernaiaAmerika : public Kontinent
+{
+    Travoiadnie* create_travoiadnie()
+    {
         return new Bizon();
     }
 
-    Plotoiadnie* create_plotoiadniee()  {
+    Plotoiadnie* create_plotoiadniee()
+    {
         return new Volk();
     }
 };

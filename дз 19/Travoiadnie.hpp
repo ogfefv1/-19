@@ -9,7 +9,8 @@
 
 using namespace std;
 
-class Travoiadnie {
+class Travoiadnie
+{
 protected:
     int weight;
     bool is_alive;

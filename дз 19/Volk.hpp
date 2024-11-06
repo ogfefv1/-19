@@ -11,18 +11,22 @@
 
 using namespace std;
 
-class Volk : public Plotoiadnie{
+class Volk : public Plotoiadnie
+{
 public:
-    Volk() {
+    Volk()
+    {
         power = 200;
     }
 
     void eat(Travoiadnie* travoiadnie) {
-        if (travoiadnie->alive() and power > travoiadnie->get_weight()) {
+        if (travoiadnie->alive() and power > travoiadnie->get_weight())
+        {
             power += 10;
             cout << "Wolf eats herbivore, power: " << power << endl;
         }
-        else {
+        else
+        {
             power -= 10;
             cout << "Wolf fails to eat, power: " << power << endl;
         }

@@ -11,7 +11,8 @@
 
 using namespace std;
 
-class MirGivotnih {
+class MirGivotnih
+{
 private:
     vector <Kontinent*> kontinent;
     vector <Travoiadnie*> travoiadnie;

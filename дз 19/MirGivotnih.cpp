@@ -10,22 +10,28 @@
 
 using namespace std;
 
-void MirGivotnih::add_kontinent(Kontinent* kontinent) {
+void MirGivotnih::add_kontinent(Kontinent* kontinent)
+{
     kontinent.push_back(kontinent);
 
     travoiadnie.push_back(kontinent->create_travoiadnie());
     plotoiadnie.push_back(kontinent->create_plotoiadnie());
 }
 
-void MirGivotnih::meals_travoiadnie() {
-    for (auto& travoiadnie : travoiadnie) {
+void MirGivotnih::meals_travoiadnie()
+{
+    for (auto& travoiadnie : travoiadnie)
+    {
         travoiadnie->eat_grass();
     }
 }
 
-void MirGivotnih::nutrition_plotoiadnie() {
-    for (auto& plotoiadnie : plotoiadnie) {
-        for (auto& travoiadnie : travoiadnie) {
+void MirGivotnih::nutrition_plotoiadnie()
+{
+    for (auto& plotoiadnie : plotoiadnie)
+    {
+        for (auto& travoiadnie : travoiadnie)
+        {
             plotoiadnie->eat(travoiadnie);
         }
     }

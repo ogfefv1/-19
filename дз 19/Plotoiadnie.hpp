@@ -10,7 +10,8 @@
 
 using namespace std;
 
-class Plotoiadnie {
+class Plotoiadnie
+{
 protected:
     int power;
 
